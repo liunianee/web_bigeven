@@ -1,0 +1,75 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* 不平铺且居中 */
+    background: url(/assets/images/login_bg.jpg) no-repeat center;
+    /* 全部填充 */
+    background-size: cover;
+}
+
+
+/* 登录框 */
+
+.logAndRegBox {
+    width: 400px;
+    height: 310px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* 登录框头部 */
+
+.title-box {
+    height: 60px;
+    background: url(/assets/images/login_title.png) no-repeat center;
+}
+
+
+/* 默认隐藏注册盒子 */
+
+.reg-box {
+    display: none;
+}
+
+
+/* 表单 */
+
+.layui-form-item {
+    padding: 0 30px;
+}
+
+
+/* 指定登录按钮靠最有对齐 */
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.links a {
+    font-size: 12px;
+}
+
+
+/* 定位输入框里图标的位置 */
+
+.layui-form-item {
+    position: relative;
+}
+
+.layui-icon {
+    position: absolute;
+    left: 40px;
+    top: 10px;
+}
+
+.layui-input {
+    padding-left: 32px!important;
+}
