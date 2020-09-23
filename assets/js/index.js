@@ -11,18 +11,18 @@ function getUserInfo() {
         url: '/my/userinfo',
 
         success: function(res) {
-            // console.log(res.data);
-            if (res.status !== 0) {
-                return layui.layer.msg('获取用户信息失败')
+                // console.log(res.data);
+                if (res.status !== 0) {
+                    return layui.layer.msg('获取用户信息失败')
+                }
+                renderAvatar(res.data)
             }
-            renderAvatar(res.data)
-        },
-        //无论成功失败都会调用 complete 函数
-        // complete: function(res) {
-        //     console.log(res.responseJSON.status);
-        //     console.log(res.responseJSON.message);
-        //     // res.responseJSON 可以拿到服务器响应回来的数据
-        //     if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！') {
+            //无论成功失败都会调用 complete 函数
+            // complete: function(res) {
+            //     console.log(res.responseJSON.status);
+            //     console.log(res.responseJSON.message);
+            //     // res.responseJSON 可以拿到服务器响应回来的数据
+            //     if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！') {
 
         //         // 1确定退出后清空本地存储中的 token
         //         localStorage.removeItem('token')
