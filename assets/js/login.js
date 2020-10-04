@@ -57,12 +57,13 @@ $(function() {
             method: 'POST',
             // 快速获得表单数据
             data: $(this).serialize(),
+
             success: function(res) {
                 if (res.status !== 0) {
                     return layer.msg('登录失败！')
                 }
-                console.log('登录成功！');
-                // 将登录成功后的token字符存入本地存储
+                layer.msg('登录成功！')
+                    // 将登录成功后的token字符存入本地存储
                 localStorage.setItem('token', res.token)
                     // console.log(res.token);
                 location.href = '/index.html'

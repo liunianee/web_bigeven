@@ -1,0 +1,30 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 15px;
+    background-color: #f2f3f5;
+}
+
+
+/* 卡片头部flex布局 */
+
+.layui-card-header {
+    display: flex;
+    /* 两边贴边对齐 */
+    justify-content: space-between;
+    /* y轴 居中对齐 */
+    align-items: center;
+}
+
+
+/* 添加文章弹出框 */
+
+#form-add,
+#form-edit {
+    padding-top: 20px;
+    padding-right: 30px;
+}

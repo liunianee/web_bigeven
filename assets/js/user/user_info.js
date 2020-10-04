@@ -29,7 +29,7 @@ $(function() {
             }
         })
     }
-    //
+    //重置按钮
     $('#btnReset').on('click', function(e) {
             //阻止默认提交行为
             e.preventDefault()
